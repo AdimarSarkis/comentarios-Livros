@@ -1,0 +1,104 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --corFundo: linear-gradient(to left, #8E0E00, rgb(231, 70, 85));
+    --corCinzaEscuro: rgb(33, 33, 33);
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Pagina principal*/
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Impede a barra de rolagem horizontal*/
+    position: relative;
+}
+.imgs{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Vai fazer que a imagem cubra a nossa div*/
+    opacity: 0.5;
+    filter: blur(5px);
+}
+.imgs #gula{
+    padding-bottom: 2rem;
+}
+.banner{
+    position: absolute;
+    top: 20%;
+    left: 13%;
+}
+.banner .cartaoInfo h1{
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    
+    margin-bottom: 2rem;
+    padding-left: 5rem;
+    padding-top: 3rem;
+}
+.banner p{
+    color: #fff;
+    font-size: 2rem;
+    
+    margin-bottom: 2rem;
+
+}
+
+.banner .cartao{
+    display: flex;
+}
+
+#menu2 ul{
+    list-style: none;
+    padding: 0;
+    background-color: #fff;
+}
+
+#menu2 ul li {
+    display: inline;
+    position: relative;
+    color: black;
+    font-size: 1.7rem;
+}
+
+#menu2 ul li a {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .5s;
+}
+#menu2 ul li a:hover{  
+    background: var(--corFundo)
+}
+
+.texto h2{
+    font-family: 'Open sans', serif;
+    font-size: 2rem;
+    padding-left: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.texto p{
+    font-size: 1.5rem;
+    font-family: 'Open Sans', serif;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+    line-height: 2.5rem;
+}

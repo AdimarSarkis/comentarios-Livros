@@ -1,0 +1,194 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --corFundo: linear-gradient(to left, #8E0E00, rgb(231, 70, 85));
+    --corCinzaEscuro: rgb(33, 33, 33);
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*Pagina principal*/
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Impede a barra de rolagem horizontal*/
+    position: relative;
+}
+.imgs{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Vai fazer que a imagem cubra a nossa div*/
+    opacity: 0.5;
+}
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.banner h1{
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+    animation: mover 1s;
+}
+.banner p{
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: .2rem .2rem  rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+    animation: mover 1s;
+}
+.banner button{
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    background: var(--corFundo);
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: mover 1s;
+}
+@keyframes mover{
+    0%{
+        transform: translateY(10rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+.sessaoCabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sessaoCabecalho h1{
+    font-size: 3rem;
+    color: rgb(33, 33, 33);
+    border-bottom: solid 3px #8E0E00;
+    margin-bottom: 1.5rem;
+}
+.detatalhes{
+    overflow: hidden; /* Impede a barra de rolagem horizontal*/
+    position: relative;
+}
+.detalheCabecalho1 h3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.6rem;
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    color: var(--corCinzaEscuro);
+}
+.detalheTexto1 p{
+    display: flex;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(53, 52, 52);
+}
+.detalheCabecalho2 h3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.6rem;
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    color: var(--corCinzaEscuro);
+}
+.detalheTexto2 p{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(53, 52, 52);
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*Sessao sugestao*/
+.sugestoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cartao{
+    padding-top: 2rem;
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+}
+
+.cartaoImg{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: rgb(33, 33, 33);
+}
+
+.cartaoImg img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+.cartao:hover .cartaoImg img{
+    opacity: .5;
+}
+.cartaoInfo{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.3 .2rem .3rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.cartaoInfo h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.cartaoInfo p{
+    color: #fff;
+    width: 80%;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.cartaoInfo button{
+    width:  8rem;
+    height: 2.5rem;
+    background: linear-gradient(to left, #8E0E00, rgb(231, 70, 85));
+    color: #fff;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.cartao:hover .cartaoInfo{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+

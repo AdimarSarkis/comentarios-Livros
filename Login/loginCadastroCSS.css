@@ -1,0 +1,115 @@
+:root{
+    --corFundo: linear-gradient(to left, #8E0E00, rgb(231, 70, 85));
+}
+body{
+    background-image: url("/imagens/livroLogin.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    margin: 0;
+    color: silver;
+}
+
+body h1 {
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    text-shadow: 0 10px 10px black;
+}
+.caixa {
+    background: rgba(33, 33, 33, 0.9);    
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 20px 20px black;
+}
+
+.caixa h2 {
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    
+}
+
+.caixa .campo{
+    position: relative;
+}
+.caixa .campo input {
+    width: 100%;
+    padding: 9px;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+}
+
+.caixa .campo label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-family: Arial;
+    pointer-events: none;
+    transition: .5s;
+}
+.caixa .campo input:focus~label, .caixa .campo input:valid~label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+
+#checkbox{
+    font-family: Arial;
+    font-size: 12px;
+    color: #fff;
+}
+.caixa button{
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px  ;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: var(--corFundo);
+    border: none;
+    outline: none;
+    color: #a7a7a7;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.caixa button:hover{
+    cursor: pointer;
+}
+
+p{
+    font-family: Arial;
+    font-size: 16px;
+}
+hr{
+    margin: 1px;
+    color: #999;
+}
+a{
+    font-weight: bold;
+    color: #fff;
+    font-family: Arial;
+    position: relative;
+    text-align: center; 
+    cursor: pointer;
+}
+a:link, a:visited {
+	text-decoration: none
+	}
+
+a:active {
+	text-decoration: none
+	}
